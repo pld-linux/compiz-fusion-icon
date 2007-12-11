@@ -13,11 +13,12 @@ Source0:	%{_name}-%{_rel}.tar.bz2
 # Source0-md5:	7cf51276a0fb33a357f921e3f320b86f
 URL:		http://beryl-project.org/
 BuildRequires:	python-devel
-BuildRequires:	rpmbuild(macros) >= 1.311
 BuildRequires:	rpm-pythonprov
+BuildRequires:	rpmbuild(macros) >= 1.311
 Requires(post,postun):	gtk+2
 Requires(post,postun):	hicolor-icon-theme
 Requires:	compiz >= 0.5.1
+Requires:	compizconfig-backend-kconfig
 Requires:	python-compizconfig
 Requires:	xorg-app-xvinfo
 BuildArch:	noarch
@@ -30,8 +31,8 @@ control your GL Desktop it handles your different decorators
 
 %description -l pl.UTF-8
 Compiz Fusion Icon jest małym programem napisanym w pythonie, który
-pozwala na kontrolę pulpitu GL. Pozwala na przełączanie się między
-różnymi dekoracjami i konfigurację.
+pozwala na kontrolę pulpitu GL. Pozwala na przełączanie się
+między różnymi dekoracjami i konfigurację.
 
 %prep
 %setup -q -n %{_name}
