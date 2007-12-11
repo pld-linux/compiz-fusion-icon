@@ -14,6 +14,7 @@ Source0:	%{_name}-%{_rel}.tar.bz2
 URL:		http://beryl-project.org/
 BuildRequires:	python-devel
 BuildRequires:	rpmbuild(macros) >= 1.311
+BuildRequires:	rpm-pythonprov
 Requires(post,postun):	gtk+2
 Requires(post,postun):	hicolor-icon-theme
 Requires:	compiz >= 0.5.1
