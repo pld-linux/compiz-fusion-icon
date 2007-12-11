@@ -4,7 +4,7 @@ Summary:	small program to control your GL Desktop
 Summary(pl.UTF-8):	mały program do kontroli Pulpitu
 Name:		compiz-%{_name}
 Version:	5.2
-Release:	0.1%{_rel}
+Release:	1.%{_rel}.0
 Epoch:		1
 License:	GPL v2+
 Group:		X11/Window Managers/Tools
