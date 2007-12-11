@@ -12,6 +12,7 @@ Group:		X11/Window Managers/Tools
 Source0:	%{_name}-%{_rel}.tar.bz2
 # Source0-md5:	7cf51276a0fb33a357f921e3f320b86f
 URL:		http://beryl-project.org/
+BuildRequires:	python
 BuildRequires:	rpmbuild(macros) >= 1.311
 Requires(post,postun):	gtk+2
 Requires(post,postun):	hicolor-icon-theme
