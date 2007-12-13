@@ -19,6 +19,7 @@ Requires(post,postun):	gtk+2
 Requires(post,postun):	hicolor-icon-theme
 Requires:	compiz >= 0.5.1
 Requires:	compizconfig-backend-kconfig
+Requires:	python-PyQt
 Requires:	python-compizconfig
 Requires:	xorg-app-xvinfo
 BuildArch:	noarch
