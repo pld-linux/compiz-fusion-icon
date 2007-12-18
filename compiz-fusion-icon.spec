@@ -4,7 +4,7 @@ Summary:	small program to control your GL Desktop
 Summary(pl.UTF-8):	mały program do kontroli Pulpitu
 Name:		compiz-%{_name}
 Version:	5.2
-Release:	1.%{_rel}.0
+Release:	1.%{_rel}.1
 Epoch:		1
 License:	GPL v2+
 Group:		X11/Window Managers/Tools
@@ -19,9 +19,9 @@ Requires(post,postun):	gtk+2
 Requires(post,postun):	hicolor-icon-theme
 Requires:	compiz >= 0.5.1
 Requires:	compizconfig-backend-kconfig
-Requires:	python-PyQt
 Requires:	python-compizconfig
 Requires:	xorg-app-xvinfo
+Suggests:	python-PyQt4
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
