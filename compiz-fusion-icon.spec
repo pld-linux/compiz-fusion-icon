@@ -1,7 +1,8 @@
+# TODO: py_postclean (after checking); verify py_*comp with bogus paths
 %define		_rel	071103git
 %define		_name	fusion-icon
-Summary:	small program to control your GL Desktop
-Summary(pl.UTF-8):	mały program do kontroli Pulpitu
+Summary:	Small program to control your GL Desktop
+Summary(pl.UTF-8):	Mały program do kontroli pulpitu GL
 Name:		compiz-%{_name}
 Version:	5.2
 Release:	1.%{_rel}.1
@@ -26,14 +27,14 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Compiz Fusion Icon is a small program written in python which lets you
+Compiz Fusion Icon is a small program written in Python which lets you
 control your GL Desktop it handles your different decorators
 (non-GL/GL) and configurators.
 
 %description -l pl.UTF-8
-Compiz Fusion Icon jest małym programem napisanym w pythonie, który
-pozwala na kontrolę pulpitu GL. Pozwala na przełączanie się
-między różnymi dekoracjami i konfigurację.
+Compiz Fusion Icon jest małym programem napisanym w Pythonie, który
+pozwala na kontrolę pulpitu GL. Obsługuje różne dekoratory (GL/nie-GL)
+i konfiguratory.
 
 %prep
 %setup -q -n %{_name}
@@ -45,8 +46,12 @@ między różnymi dekoracjami i konfigurację.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__python} setup.py install -O1 --skip-build --root $RPM_BUILD_ROOT
+%{__python} setup.py install \
+	-O1 \
+	--skip-build \
+	--root $RPM_BUILD_ROOT
 
+# ???
 %py_comp $RPM_BUILD_ROOT%{_datadir}/fusion-icon
 %py_ocomp $RPM_BUILD_ROOT%{_datadir}/fusion-icon
 
