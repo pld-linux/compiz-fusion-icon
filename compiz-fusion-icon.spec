@@ -1,8 +1,3 @@
-#
-# TODO:
-# - kill dependency loop:
-#   compiz-fusion-icon -> compiz-fusion-icon-interface -> compiz-fusion-icon
-#
 %define		_rel	080712git
 %define		_name	fusion-icon
 Summary:	Small program to control your GL Desktop
@@ -22,7 +17,7 @@ BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.311
 Requires(post,postun):	gtk+2
 Requires(post,postun):	hicolor-icon-theme
-Requires:	%{name}-interface = %{version}-%{release}
+Requires:	%{name}-interface = %{epoch}:%{version}-%{release}
 Requires:	compiz >= 0.5.1
 Requires:	python-compizconfig
 Requires:	xorg-app-xvinfo
@@ -43,10 +38,10 @@ i konfiguratory.
 Summary:	GTK+ interface for Compiz Fusion Icon
 Summary(pl.UTF-8):	Compiz Fusion Icon - interfejs GTK+
 Group:		X11/Window Managers/Tools
-Requires:	%{name} = %{version}-%{release}
+Requires:	%{name} = %{epoch}:%{version}-%{release}
 Requires:	python-pygtk-gtk >= 2:2.10.0
 Suggests:	compizconfig-backend-gconf
-Provides:	%{name}-interface = %{version}-%{release}
+Provides:	%{name}-interface = %{epoch}:%{version}-%{release}
 
 %description interface-gtk
 GTK+ interface for Compiz Fusion Icon.
@@ -58,10 +53,10 @@ Compiz Fusion Icon - interfejs GTK+.
 Summary:	Qt4 interface for Compiz Fusion Icon
 Summary(pl.UTF-8):	Compiz Fusion Icon - interfejs Qt4+
 Group:		X11/Window Managers/Tools
-Requires:	%{name} = %{version}-%{release}
+Requires:	%{name} = %{epoch}:%{version}-%{release}
 Requires:	python-PyQt4
 Suggests:	compizconfig-backend-kconfig
-Provides:	%{name}-interface = %{version}-%{release}
+Provides:	%{name}-interface = %{epoch}:%{version}-%{release}
 
 %description interface-qt4
 Qt4 interface for Compiz Fusion Icon.
