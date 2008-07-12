@@ -10,7 +10,7 @@ Summary(pl.UTF-8):	Mały program do kontroli pulpitu GL
 Name:		compiz-%{_name}
 Version:	0.1.0
 Release:	0.%{_rel}.1
-Epoch:		0.1
+Epoch:		1
 License:	GPL v2+
 Group:		X11/Window Managers/Tools
 # It's from git://anongit.compiz-fusion.org/users/crdlb/fusion-icon
