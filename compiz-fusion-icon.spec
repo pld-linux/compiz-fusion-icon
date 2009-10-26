@@ -21,6 +21,7 @@ Requires:	%{name}-interface = %{epoch}:%{version}-%{release}
 Requires:	compiz >= 0.5.1
 Requires:	python-compizconfig
 Requires:	xorg-app-xvinfo
+Suggests:	ccsm
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
