@@ -1,6 +1,6 @@
 %define		subver	080712git
 %define		_name	fusion-icon
-%define		rel		5
+%define		rel		6
 Summary:	Small program to control your GL Desktop
 Summary(pl.UTF-8):	Mały program do kontroli pulpitu GL
 Name:		compiz-%{_name}
@@ -16,7 +16,7 @@ URL:		http://compiz-fusion.org/
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.311
-Requires(post,postun):	gtk+2
+Requires(post,postun):	gtk-update-icon-cache
 Requires(post,postun):	hicolor-icon-theme
 Requires:	%{name}-interface = %{epoch}:%{version}-%{release}
 Requires:	compiz >= 0.5.1
