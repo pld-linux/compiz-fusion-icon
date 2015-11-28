@@ -70,13 +70,13 @@ Compiz Fusion Icon - interfejs Qt4.
 %setup -q -n %{_name}
 
 %build
-%{__python} setup.py build
+%py_build
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__python} setup.py install \
+%py_install \
 	-O1 \
 	--skip-build \
 	--root $RPM_BUILD_ROOT
