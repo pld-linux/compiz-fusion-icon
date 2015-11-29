@@ -15,7 +15,7 @@ Source0:	%{_name}-%{subver}.tar.bz2
 URL:		http://compiz-fusion.org/
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.311
+BuildRequires:	rpmbuild(macros) >= 1.710
 Requires(post,postun):	gtk-update-icon-cache
 Requires(post,postun):	hicolor-icon-theme
 Requires:	%{name}-interface = %{epoch}:%{version}-%{release}
